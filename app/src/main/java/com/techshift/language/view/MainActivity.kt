@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.textView.text = vm.getEnglishPerson()
-        vm.getDataVM()
+        binding.textView.text = vm.getEnglishPerson(true)
+       Log.e("<<<<<<", vm.getEnglishPerson(false))
     }
 }
